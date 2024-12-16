@@ -4,10 +4,6 @@
  */
 package jpa_per.dao;
 
-/**
- *
- * @author vanessalagomachado
- */
 public interface InterfaceBD {
     public Boolean conexaoAberta();
     public void fecharConexao();

@@ -4,24 +4,8 @@
  */
 package Modelos;
 import java.io.Serializable;
-import java.util.Date;
-import java.util.List;
-import javax.persistence.Column;
-import javax.persistence.DiscriminatorColumn;
-import javax.persistence.DiscriminatorType;
-import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Inheritance;
-import javax.persistence.InheritanceType;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
-import javax.persistence.Table;
+import java.util.*;
+import javax.persistence.*;
 /**
  *
  * @author 20221PF.CC0008
@@ -46,14 +30,14 @@ public class Receituarios implements Serializable {
     private final List<Medicamentos> medicamentos;
 
     public Receituarios() {
-        this.medicamentos = null;
+        this.medicamentos = new ArrayList<>();
     }
 
     public Receituarios(int id, Medicos medico, Pacientes paciente) {
         this.id = id;
         this.medico = medico;
         this.paciente = paciente;
-        this.medicamentos = null;
+        this.medicamentos = new ArrayList<>();
     }
 
     public int getId() {
