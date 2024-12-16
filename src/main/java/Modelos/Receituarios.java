@@ -18,7 +18,7 @@ public class Receituarios implements Serializable {
     private int id;
     
     @Column(nullable = false, length = 200)
-    private String descricao;
+    private String prescricao;
     
     @Enumerated(EnumType.STRING)
     private Medicos medico;
@@ -48,12 +48,12 @@ public class Receituarios implements Serializable {
         this.id = id;
     }
 
-    public String getDescricao() {
-        return descricao;
+    public String getPrescricao() {
+        return prescricao;
     }
 
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
+    public void setPrescricao(String prescricao) {
+        this.prescricao = prescricao;
     }
 
     public Medicos getMedico() {

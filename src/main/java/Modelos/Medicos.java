@@ -29,9 +29,7 @@ public class Medicos implements Serializable {
     @Column(length = 20)
     private String formacao;
     
-    @OneToMany(mappedBy = "Pacientes")
-    private final List<Pacientes> pacientes;
-
+    @OneToMany(mappedBy = "medico", cascade = CascadeType.ALL, orphanRemoval = true)    private final List<Pacientes> pacientes;
     public Medicos() {
         this.pacientes = new ArrayList<>();
     }

@@ -4,11 +4,10 @@
  */
 package telas.view;
 
-import Modelos.Medicamentos;
 import jpa_per.dao.*;
 import javax.swing.DefaultListModel;
 import javax.swing.*;
-import modelos.*;
+import Modelos.*;
 
 /**
  *
@@ -161,7 +160,7 @@ public class TelaMedicamentos extends javax.swing.JFrame {
             jpa.conexaoAberta();
             DefaultListModel modeloLista = new DefaultListModel();
             modeloLista.addAll(jpa.getMedicamentos(txtBuscaDescricao.getText().trim()));
-            System.out.println("Pacientes carregados: "+jpa.getPacientes(txtBuscaDescricao.getText().trim()));
+            System.out.println("Medicamentos carregados: "+jpa.getMedicamentos(txtBuscaDescricao.getText().trim()));
             lstMedicamentos.setModel(modeloLista);
 
             jpa.fecharConexao();
@@ -193,7 +192,7 @@ public class TelaMedicamentos extends javax.swing.JFrame {
     private void btnRemoverMedicamentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRemoverMedicamentoActionPerformed
         Medicamentos medicamentoSel = lstMedicamentos.getSelectedValue();
         if (medicamentoSel != null) {
-            System.out.println("Pessoa: " + medicamentoSel.getId());
+            System.out.println("Medicamento: " + medicamentoSel.getId());
             try {
                 jpa.conexaoAberta();
 

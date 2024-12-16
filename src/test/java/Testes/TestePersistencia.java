@@ -4,7 +4,7 @@ package Testes;
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit4TestClass.java to edit this template
  */
-import jpa_per.dao.PersistenciaJPA;
+import jpa_per.dao.*;
 import Modelos.*;
 import org.junit.*;
 import static org.junit.Assert.*;

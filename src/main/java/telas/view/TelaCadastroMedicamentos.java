@@ -5,7 +5,6 @@
 package telas.view;
 
 
-import Modelos.Medicamentos;
 import java.awt.Frame;
 import jpa_per.dao.*;
 import java.util.*;
@@ -13,7 +12,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.DefaultListModel;
 import javax.swing.*;
-import modelos.*;
+import Modelos.*;
 /**
  *
  * @author Jennifer Ebertz

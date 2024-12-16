@@ -4,11 +4,10 @@
  */
 package telas.view;
 
-import Modelos.Medicos;
 import jpa_per.dao.*;
 import javax.swing.DefaultListModel;
 import javax.swing.*;
-import modelos.*;
+import Modelos.*;
 /**
  *
  * @author Jennifer Ebertz
